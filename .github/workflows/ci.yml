@@ -41,6 +41,8 @@ jobs:
       - name: AWS Hosted Runners
         id: aws_hosted_runners
         uses: cppalliance/aws-hosted-runners@v1.0.0
+        with:
+          owner_list: openshift2
 
   posix:
     defaults:
