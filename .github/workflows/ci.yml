@@ -312,6 +312,12 @@ jobs:
       - name: Setup Boost
         run: ci\github\install.bat
 
+      - name: Debugging
+        shell: powershell
+        run: |
+            whoami
+            gci env:* | sort-object name
+
       - name: Run tests
         if: '!matrix.coverage'
         run: ci\build.bat
