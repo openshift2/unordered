@@ -309,14 +309,16 @@ jobs:
             if "%GITHUB_REPOSITORY%" == "%GITHUB_REPOSITORY:boost-ci=%" xcopy /s /e /q /i /y boost-ci-cloned\ci .\ci
             rmdir /s /q boost-ci-cloned
 
-      - name: Setup Boost
-        run: ci\github\install.bat
-
       - name: Debugging
         shell: powershell
         run: |
-            whoami
+            echo "Printing env"
             gci env:* | sort-object name
+            echo "Printing whoami"
+            whoami
+
+      - name: Setup Boost
+        run: ci\github\install.bat
 
       - name: Run tests
         if: '!matrix.coverage'
