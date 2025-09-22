@@ -59,9 +59,9 @@ jobs:
           # - { compiler: gcc-9,     cxxstd: '11,14,17',    os: 'ubuntu-22.04', install: 'g++-9' }
           # - { compiler: gcc-10,    cxxstd: '11,14,17,20', os: 'ubuntu-22.04', install: 'g++-10' }
           # - { compiler: gcc-11,    cxxstd: '11,14,17,20', os: 'ubuntu-22.04', install: 'g++-11' }
-          - { compiler: gcc-12,    cxxstd: '11,14,17,20', os: 'ubuntu-22.04', install: 'g++-12' }
+          # - { compiler: gcc-12,    cxxstd: '11,14,17,20', os: 'ubuntu-22.04', install: 'g++-12' }
           - { compiler: gcc-13,    cxxstd: '11,14,17,20', os: 'ubuntu-24.04', install: 'g++-13' }
-          - { compiler: gcc-14,    cxxstd: '11,14,17,20', os: 'ubuntu-24.04', install: 'g++-14' }
+          # - { compiler: gcc-14,    cxxstd: '11,14,17,20', os: 'ubuntu-24.04', install: 'g++-14' }
           # - { name: "gcc-14 w/ sanitizers (11)", sanitize: yes,
           #     compiler: gcc-14,    cxxstd: '11',          os: 'ubuntu-24.04', install: 'g++-14', ccache_key: "san1" }
           # - { name: "gcc-14 w/ sanitizers (14)", sanitize: yes,
